@@ -6,7 +6,7 @@ import {
   Operation,
   Transaction,
   TransactionBuilder,
-} from "stellar-base";
+} from "zagg-stellar-base";
 import { InvalidSep10ChallengeError } from "./errors";
 
 /**

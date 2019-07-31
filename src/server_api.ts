@@ -1,5 +1,5 @@
-import { Asset, AssetType } from "stellar-base";
 import { Omit } from "utility-types";
+import { Asset, AssetType } from "zagg-stellar-base";
 import { Horizon } from "./horizon_api";
 
 /* tslint:disable-next-line: no-namespace */

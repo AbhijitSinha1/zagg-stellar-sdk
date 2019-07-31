@@ -1,8 +1,8 @@
 /* tslint:disable:variable-name */
 
 import forIn from "lodash/forIn";
-import { Account as BaseAccount } from "stellar-base";
 import { Omit } from "utility-types";
+import { Account as BaseAccount } from "zagg-stellar-base";
 import { Horizon } from "./horizon_api";
 import { ServerApi } from "./server_api";
 

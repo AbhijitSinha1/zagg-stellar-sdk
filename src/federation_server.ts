@@ -1,6 +1,6 @@
 import axios from "axios";
-import { StrKey } from "stellar-base";
 import URI from "urijs";
+import { StrKey } from "zagg-stellar-base";
 
 import { Config } from "./config";
 import { BadResponseError } from "./errors";
@@ -239,9 +239,7 @@ export class FederationServer {
         } else {
           return Promise.reject(
             new BadResponseError(
-              `Server query failed. Server responded: ${response.status} ${
-                response.statusText
-              }`,
+              `Server query failed. Server responded: ${response.status} ${response.statusText}`,
               response.data,
             ),
           );

@@ -3,8 +3,8 @@
 import BigNumber from "bignumber.js";
 import isEmpty from "lodash/isEmpty";
 import merge from "lodash/merge";
-import { Asset, StrKey, Transaction, xdr } from "stellar-base";
 import URI from "urijs";
+import { Asset, StrKey, Transaction, xdr } from "zagg-stellar-base";
 
 import { CallBuilder } from "./call_builder";
 import { Config } from "./config";
@@ -441,9 +441,7 @@ export class Server {
         }
         return Promise.reject(
           new BadResponseError(
-            `Transaction submission failed. Server responded: ${
-              response.status
-            } ${response.statusText}`,
+            `Transaction submission failed. Server responded: ${response.status} ${response.statusText}`,
             response.data,
           ),
         );
