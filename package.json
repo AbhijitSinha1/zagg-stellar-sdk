@@ -140,7 +140,7 @@
     "eventsource": "^1.0.7",
     "lodash": "^4.17.11",
     "randombytes": "^2.1.0",
-    "zagg-stellar-base": "^2.2.0",
+    "zagg-stellar-base": "git+https://github.com/AbhijitSinha1/zagg-stellar-base",
     "toml": "^2.3.0",
     "tslib": "^1.10.0",
     "urijs": "^1.19.1",
