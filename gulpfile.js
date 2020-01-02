@@ -174,7 +174,7 @@ gulp.task('submit-coverage', function submitCoverage() {
   return gulp.src('./coverage/**/lcov.info').pipe(plugins.coveralls());
 });
 
-gulp.task('build', gulp.series('clean', 'build:node', 'build:browser'));
+gulp.task('build', gulp.series('clean', 'build:node' )); //, 'build:browser'
 
 gulp.task(
   'test',
